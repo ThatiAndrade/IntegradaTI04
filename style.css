@@ -1,0 +1,517 @@
+
+/*primeira pagina*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+ 
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+ 
+body{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+#person{
+    height: 100vh;
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+   background: black;
+}
+ 
+.person-content{
+    height: 100%;
+    width: 50%;
+ 
+   display: flex;
+   justify-content: center;
+   
+   align-items: center;
+   flex-direction: column;
+ 
+    background: black;
+ 
+}
+ 
+.person-content div h1{
+padding: 0px 4px;
+color: white;
+font-size: 4.5rem;
+line-height: 6rem;
+}
+ 
+.person-content div h2{
+    padding: 0px 4px;
+color: blue;
+font-size: 4.5rem;
+line-height: 6rem;
+}
+ 
+.stacks-content{
+    display: flex;
+    justify-content: center;
+ 
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.stacks-content h3{
+    color: white;
+    font-size: 1.15rem;
+    margin-left: 20px;
+}
+ 
+.person-name{
+margin-top: 11rem;
+}
+ 
+.stacks{
+    display: flex;
+    align-items: center;
+ 
+    flex-direction: row;
+}
+ 
+.stacks ul li{
+display: flex;
+align-items: center;
+margin: 10px;
+padding: 10px;
+
+}
+ 
+.stacks ul li img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+   
+}
+ 
+.stacks-content img{
+    width: 30px;
+    height: 30px;
+}
+ 
+.person-backgound{
+    height: 100vh;
+    width: 50%;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+ 
+    background-image: url(./Janela.png);
+    background-size: cover;
+    background-position: top center;
+}
+ 
+.person-backgound::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ 
+ height: 100%;
+ width: 100%;
+ 
+ 
+}
+.wrapper-profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    padding: 14px;
+    margin: 20px 15px;
+ 
+    background:
+    radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(#000 68%, transparent 0),
+    linear-gradient(to top right, #ffa500 0%, #ff1493 100%);
+    border-radius: 50%;
+}    
+ 
+.wrapper-profile-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+ 
+.links  a img{
+    width: 30px;
+    height: 30px;
+ 
+    margin: 10px;
+    filter: brightness(.8);
+    transition: all .3s ease;
+}
+ 
+.links a img:hover{
+ filter: brightness(1);  
+ transform: scale(1.1);
+ 
+}
+ 
+/*segunda pagina*/
+ 
+
+.sobre {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+   background: black;
+   padding: 40px 4%;
+}
+ section .sobre .flex{
+    align-items: center;
+ }
+ 
+.sobre .txt-sobre {
+    color: white;
+ 
+}
+.sobre .txt-sobre h1{
+    font-size: 40px;
+}
+ 
+.sobre .txt-sobre h2{
+    color: blue;
+    display: block;
+    font-size: 40px;
+    line-height:40px;
+    margin-bottom: 30px;
+}
+ 
+    .sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 11px;
+    }
+ 
+    .sobre .btn-social button {
+    padding: 10px 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    background-color: blue;
+    border-radius: 30px;
+    cursor: pointer;
+     
+    }
+ 
+    /*terceira pagina*/
+    
+    #about{
+        height: 100vh;width: 100%;
+        background: black;
+        display: flex;
+        color: white;
+    }
+ 
+    .backgound-about{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    .img-wrapper{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+ 
+ 
+    .img-wrapper::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+ 
+        background:
+        linear-gradient(.25turn, transparent 30%, color black);
+    }
+ 
+    .img-wrapper img{
+        height: 100%;
+        width: 100%;
+ 
+        object-fit: cover;
+    }
+ 
+    .box-about{
+        display: flex;
+        justify-content: center;
+       flex-direction: column;
+       width: 50%;
+       padding: 3rem;
+    }
+ 
+    .section-subtitle h2 p{
+    display: inline-block;
+    font-size: 3rem;
+    }
+    .section-subtitle h2 p:nth-child(2) span{
+        padding: 3px 5px;
+        border-radius: 4px;
+        color: black;
+        background-color: white;
+    }
+ 
+    .box-about h3{
+        margin: 3rem;
+        font-size: 2rem;
+    }
+    .box-about h3 p{
+        display: inline-block;
+        padding: 2px 4px;
+        border-radius: 4px;
+        color: black;
+        background: #ff1493;
+        width: fit-content;
+    }
+ 
+    .box-about h4{
+        margin: 1rem 3rem;
+        font-size: 1.5rem;
+    }
+ 
+    .box-about h4 p{
+        display: inline;
+        padding: 2px 4px;
+        color: blue;
+        font-size: bold;
+        font-weight:1.75rem;
+    }
+ 
+    .button-cta{
+        display: flex;
+        max-width: 190px;
+        margin: 4rem 3rem;
+    }
+ 
+    .button-cta button{
+        display: inline-block;
+        width: 100%;
+        max-width: 172px;
+        padding: 10px;
+        margin: 3rem;
+        font-weight: 700;
+        letter-spacing: .15rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .button-cta button:hover{
+        transition: all.3s ease;
+        filter: brightness(.8);
+    }
+ 
+    /*quarta e quinta pagina*/
+    
+    #projects{
+        height: 100vh;
+        width: 100%;
+        background: black;
+        color: white;
+ 
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .projects-title h2{
+        margin: 3rem;
+        padding: 3rem;
+        font-size: 3rem;
+        color: white;
+    }
+ 
+    .wrapper-projects{
+        display: flex;
+        margin-top: 2rem;
+ 
+        height: 500px;
+ 
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        color: black;
+        z-index: 1;
+       
+    }
+ 
+ 
+    .card-projects{
+        width: 320px;
+        height: 450px;
+        padding: 30px 20px 20px;
+       
+        position: relative;
+        margin: 0px 10px;
+        background: white;
+        align-items: center;
+        flex-direction: column;
+ 
+        border-radius: 20px;
+    }
+ 
+    .card-projects::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40%;
+        width: 100%;
+ 
+        background: purple;
+        border-radius: 20px 20px 0px 0px;
+    }
+ 
+    .content-project{
+        height: 100%;
+        width: 100%;
+ 
+       
+        display: flex;
+        flex-direction: column;
+ 
+        z-index: 1;
+    }
+ 
+    .image-project{
+        height: 240px;
+        width: 250px;
+ 
+        overflow: hidden;
+        border-radius: 30px;
+        position: relative;
+ 
+        border: 4px solid purple;
+        margin: 0 auto;
+        z-index: 1;
+   
+ 
+    }
+ 
+    .image-project img a {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+ 
+        border-radius: 30px;
+       
+        position: absolute;
+        top: 0;
+        left: 0;
+ 
+        border: 2px solid white;
+        transition: transform 3s ease-out;
+        cursor: pointer;
+    }
+ 
+    .image-project img:hover{
+        transform: scale(1.1);
+    }
+ 
+    .content-project span{
+        color: black;
+        font-weight: bold;
+        font-size: 1.7rem;
+ 
+        margin: .75rem auto .5rem auto;
+    }
+ 
+    .content-project p{
+        color: #3d3d4b;
+        font-weight: bold;
+        font-size: 1.1rem;
+ 
+        margin: 6rem .75rem;
+ 
+    }
+ 
+    .cta-projects {
+        width: 300px;
+        margin: auto auto 15px auto;
+       
+       
+        display: flex;
+        align-items: center;
+    }
+ 
+    .cta-projects a button{
+        padding: 10px 40px;
+        font-size: 15px;
+        color: white;
+        font-weight: 600;
+        border: 0;
+        background-color: purple;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+ 
+ 
+    /* sexta pagina*/
+    
+    .contato{
+        display: flex;
+        flex-direction: column;
+ 
+        height: 40vh;
+        width: 100%;
+ 
+        color: white;
+        background: black;
+    }
+ 
+    .contact-icon h2{
+        margin: 3rem;
+        padding: 1rem;
+        font-size: 3rem;
+        color: white;
+    }
+ 
+    .contant-icons-wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+ 
+    .contact-icon-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+ 
+        margin: 0rem 3rem;
+        padding: 3rem;
+    }
+ 
+    .contact-icon2{
+        height: 40px;
+        width: 40px;
+ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+ 
+        background:white;
+        padding: 1rem;
+        border-radius: 50%;
+    }
+ 
+    .contact-icon2 i{
+        font-size: 2rem;
+        color: blue;
+    }
